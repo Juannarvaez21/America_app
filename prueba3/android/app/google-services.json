@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "27548206084",
+    "project_id": "americaradio-5135b",
+    "storage_bucket": "americaradio-5135b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:27548206084:android:a4fe7c1270ba2c7c792151",
+        "android_client_info": {
+          "package_name": "com.example.prueba3"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxY_WOrSiSGqCVXOg08JVoMprqWVrcIBk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
