@@ -11,7 +11,6 @@ import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  
   runApp(MyApp());
 }
 
@@ -29,7 +28,8 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         bottomNavigationBar: CurvedNavigationBar(
-          backgroundColor: Colors.blue,
+          backgroundColor:  Color(0xFFE3E6FF),
+            color: Colors.indigoAccent,
           animationDuration: Duration(milliseconds: 300),
           items: const <Widget>[
             Icon(Icons.tv),

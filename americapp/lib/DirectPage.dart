@@ -70,70 +70,77 @@ class _DirectPageState extends State<DirectPage> {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home:Scaffold(
-          appBar: AppBar(
-            toolbarHeight: 100,
-            backgroundColor:  Colors.blue,
-            title: SizedBox(
-              width: 100,
-              height: 100,
-              child: Image.asset(
-                'assets/logo.png',
-                fit: BoxFit.cover,
-              ),
-            ),
-          ),
           body: Container(
-            color: Colors.blue,
+            color: Color(0xFFE3E6FF),
             child: Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Padding(
-                    padding: EdgeInsets.only(top: 0),
-
-                    child: Column(
-                      children: [
-                         if (_controller != null)
-                                Container(
-                                  child: YoutubePlayer(
-                                    controller: _controller!,
-                                    showVideoProgressIndicator: true,
-                                  ),
-                                    width: double.infinity,
-                                  height: 200,
-                                  color: Colors.black12,
-                                )
-                              else
-                                const CircularProgressIndicator(),
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            //Titulo
-                          Container(
-                            width: 390,
-                            child: Text(
-                                                    _title?? '',
-                                                    style: TextStyle(
-                            fontSize: 24,
-                            fontWeight: FontWeight.bold
-                            )
-                                                    ),
-                          ),
-                            SizedBox(height: 10,),
-                            Container(
-                                width: 390,
-                                child:Text(
-                            _desc?? '',
-                            style: TextStyle(
-                              fontSize: 17,
-                              fontWeight: FontWeight.normal
+                  Column(
+                    children: [
+                       if (_controller != null)
+                              Container(
+                                child: YoutubePlayer(
+                                  controller: _controller!,
+                                  showVideoProgressIndicator: true,
+                                ),
+                                  width: double.infinity,
+                                height: 250,
+                                color: Colors.black12,
                               )
+                            else
+                              const CircularProgressIndicator(),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          SizedBox(
+                            width: 70,
+                            height: 70,
+                            child: Image.asset(
+                              'assets/logo.png',
+                              fit: BoxFit.cover,
                             ),
-                            )
-                          ],
-                        )
-                      ],
-                    ),
+                          ),
+                        ],
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(top: 20.0),
+                        child: SizedBox(
+                          width: 300,
+                          height: 300,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              //Titulo
+                              Center(
+                                child: SizedBox(
+                                  width: 390,
+                                  child: Text(
+                                    _title ?? '',
+                                    style: TextStyle(
+                                      fontSize: 25,
+                                      fontWeight: FontWeight.bold,
+                                      color: Color(0xFF1A226C),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              SizedBox(height: 5,),
+                              Container(
+                                  width: 390,
+                                  child:Text(
+                              _desc?? '',
+                              style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                fontSize: 15,
+                                )
+                              ),
+                              )
+                            ],
+                          ),
+                        ),
+                      )
+                    ],
                   ),
                 ],
 

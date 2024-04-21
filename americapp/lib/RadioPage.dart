@@ -62,7 +62,7 @@ class _AnimatedLogoState extends State<AnimatedLogo> with SingleTickerProviderSt
     return Scaffold(
       appBar: AppBar(
         toolbarHeight: 100,
-        backgroundColor:  Colors.blue,
+        backgroundColor:  Color(0xFFE3E6FF),
         title: SizedBox(
           width: 100,
           height: 100,
@@ -73,7 +73,7 @@ class _AnimatedLogoState extends State<AnimatedLogo> with SingleTickerProviderSt
         ),
       ),
       body: Container(
-        color: Colors.blue,
+        color: Color(0xFFE3E6FF),
         child: Center(
           child: Container(
             width: 300,
@@ -82,8 +82,8 @@ class _AnimatedLogoState extends State<AnimatedLogo> with SingleTickerProviderSt
               borderRadius: BorderRadius.circular(20.0),
               color:Colors.white,
               border: Border.all(
-                width: 10,
-                color: Color(0xFF5C9DFF),
+                width: 7,
+                color: Color(0xFF071D9DFF),
               ),
               boxShadow: [
                 BoxShadow(
@@ -104,8 +104,8 @@ class _AnimatedLogoState extends State<AnimatedLogo> with SingleTickerProviderSt
                     color: Colors.black87,
                     shape: BoxShape.circle,
                     border: Border.all(
-                      width: 10,
-                      color: Color(0xFF5C9DFF),
+                      width: 6,
+                      color: Colors.indigo,
                     ),
                     boxShadow: [
                       BoxShadow(
